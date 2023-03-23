@@ -9,3 +9,40 @@ grammar = "I want you to act as an English translator, spelling corrector and im
 trans_en = "I want you to act as an English translator. I will speak to you in any language and you will detect the language, translate it to English."
 
 trans_zh = "I want you to act as an Chinese translator. I will speak to you in any language and you will detect the language, translate it to Chinese. Do not output anything other than the translation."
+
+huh = """Parse the Harvard University Housing description into structured infos. Only output the value of the following keys: Pet friendly?; Free WiFi; Parking; Fitness Room; Study Room; Kitchens.
+
+Example:
+
+Input:
+Kitchens include electric stove, refrigerator, microwave oven, and dishwasher
+Cable TV ready
+Free wireless internet
+Vinyl flooring
+Laundry: in-unit washer/dryer
+Balcony in some apartments
+Pet friendly in some apartments
+Non-smoking
+Some accessible units. Email huh_disability_coordinator@harvard.edu for information on specific accommodations.
+UTILITIES
+Heat, hot and cold water, and electricity included in the rent
+Heating: forced hot water
+Air conditioning: window unit provided, additional units can be rented.
+COMMUNITY FEATURES
+Children's playroom (membership required)
+Children's outdoor play area
+Childcare center (not operated by Harvard University Housing) located on the grounds
+Elevators in high-rise buildings (entries 1, 2, and 6)
+Study room
+Common room
+Fitness room
+Laundry
+Bicycle storage: garage
+Parking: limited availability through Harvard University Parking Services for additional fee
+
+Output:
+Pet friendly?; Free WiFi; Parking; Fitness Room; Study Room; Kitchens
+Partial; Yes; limited availability through Harvard University Parking Services for additional fee; Yes; Yes; electric stove, refrigerator, microwave oven, and dishwasher
+
+Input:
+"""

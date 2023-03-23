@@ -9,3 +9,7 @@ grammar correction: python main.py --p grammar 'hello w0rld'
 translate to English: python main.py --p trans_en '你好'
 
 translate to Chinese: python main.py --p trans_zh 'Hi there!'
+
+Other features:
+
+Harvard university housing: see huh
